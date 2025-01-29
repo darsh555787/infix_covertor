@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infix to Prefix & Postfix Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <img src="./images/logo.png" alt="App Logo" class="logo">
+
+    <div class="container">
+        <h2>Infix to Prefix & Postfix Converter</h2>
+        <input type="text" id="infixInput" placeholder="Enter infix expression">
+        <button onclick="convertExpression()">Convert</button>
+        
+        <div class="result">
+            <p><strong>Postfix:</strong> <span id="postfixResult">-</span></p>
+            <p><strong>Prefix:</strong> <span id="prefixResult">-</span></p>
+        </div>
+
+        <div class="steps">
+            <h3>Steps:</h3>
+            <p><strong>Postfix Conversion:</strong></p>
+            <ul id="postfixSteps"></ul>
+
+            <p><strong>Prefix Conversion:</strong></p>
+            <ul id="prefixSteps"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
